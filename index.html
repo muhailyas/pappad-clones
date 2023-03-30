@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <script src="https://kit.fontawesome.com/db40a0ab1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pappad Online Food Delivery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand ms-5" href="#home-section"><img src="./logo.png" alt="" style="height: 3.4em;"></a>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text ms-auto me-5 pe-5">
+                <a href="#contact"><button  type="button" class="btn btn-warning me-3" style="background-color: #ffd576;color: #7e1a00;box-shadow: 1px 1px 10px #00000061;"><STRONG>REGISTER WITH US</STRONG></button></a>
+                <a href="#download"><button type="button" class="btn btn-warning" style="background-color: #ffd576;color: #7e1a00;box-shadow: 1px 1px 10px #00000061;"><STRong>DOWNLOAD</STRong></button></a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home-section" class=" container-fluid" style="background-image: linear-gradient(45deg,#fac054,#e53b17)!important; max-width: 100%;" >
+           <div class=" container-fluid row min-vh-100 align-items-center">
+            <div class="col-lg-5 text-white ms-auto me-auto mt-5 ps-5">
+                <h1 style="font-size: 3em;letter-spacing: 3px;word-spacing: 3px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><strong>Order your food & enjoy the taste</strong></h1>
+                <p class="text-mute mt-5 mb-5 ">Your favourite foods delivered fast at your door!</p>
+                <button type="button" class="btn btn-outline-danger text-white border">DOWNLOAD NOW!</button>
+            </div>
+            <div class="col-lg-3 ms-auto me-auto mt-5 ps-5 pe-5 text-center">
+                <img id="phone" src="./mobile02.png" alt="" style="height: 40em;">
+            </div>
+           </div>     
+      </section>
+
+      <section id="contact">
+        <div class="container-fluid row  bg-white" >
+          <div class="coll-md-12 text-center mt-5 " >
+            <img src="./Red_Phone_Font-Awesome.svg.png " alt="" style="height: 2em;">
+            <h2>Contact-us</h2>
+            <hr class="ms-auto me-auto" style="max-width: 3em;">
+            <p class="text-mute">We are here to help you! Describe us how can we support you</p>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <form id="submit-form" class="row g-3 justify-content-center">
+                <div class="col-md-3 ">
+                  <input type="text" placeholder="Your name:" class="form-control" name="name" id="name" onkeyup="namevalidation()">
+                  <span id="namevalid" class="error"></span>
+                </div>
+                <div class="col-md-3">
+                  <input type="email" placeholder="Your email:" class="form-control" name="email" id="mail" onkeyup="emailvalidation()">
+                  <span id="emailvalid" class="error"></span>
+                </div>
+                <div class="col-md-3">
+                  <input type="tel" class="form-control" id="number" name="phone" placeholder="Your phone(+971)" onkeyup="phonevalidation()" >
+                  <span id="numvalid"class="error" ></span>
+                </div>
+                <div class="form-group col-md-9">
+                  <textarea class="form-control" name="message" id="msg"  onkeyup="msgvalid()" cols="30" rows="4" placeholder="Your message:"></textarea>
+                  <span id="msgvalid" class="error"></span>
+                </div>
+                <div class="col-md-12">
+                  <button onclick="return validateform()" id="submit" type="submit" class="btn text-white pe-5 ps-5 mb-5 " style="background-image: linear-gradient(45deg,#fac054,#e53b17);border: none;">SUBMIT MESSAGE</button>
+                  <span id="submitvalid"class=" error mb-5" ></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section id="download">
+        <div class="container-fluid  pt-5 " style="background-image: linear-gradient(45deg,#fac054,#e53b17)!important; max-width: 100%;">
+          <div class="row container-fluid text-center justify-content-center">
+            <div class="col-md-12 mt-5 text-white">
+              <img src="./arrow.png" alt="" style="height: 2em;">
+              <h3>APP DOWNLOAD</h3>
+              <hr class="ms-auto me-auto" style="max-width: 3em;">
+            </div>
+            <div class="col-md-6 text-white " style="opacity: 0.3;">
+              <p>We are committed to bring you finest taste which you can order from comfort of your home and we offer speedy and convenient delivery</p>
+            </div>
+          </div>
+          <div class="cok-md-6 pe-5 ps-5 text-center mt-5 pb-5">
+            <a href="https://apps.apple.com/in/app/pappad-online-food-delivery/id1609559334" target="_blank"><img src="./apple.png" alt="" style="height: 3em;"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.pappad.customer" target="_blank"><img src="./google.png" alt="" style="height: 3em;"></a>
+          </div>
+        </div>
+      </section>
+    <footer class="container-fluid pt-5" style="background-color: #343a40!important;">
+      <div class="row p-0 align-center" >
+        <div class="col-md-2 container-fluid justify-content-center me-auto ">
+          <ul style= "display: flex; flex-direction:column;">
+          <a href="https://pappad.com/privacy-policy" style="text-decoration: none;color: #fff;">Privacy Policy</a>
+          <a href="https://pappad.com/refund-policy" style="text-decoration: none;color: #fff;">Refund Policy</a>
+          <a href="https://pappad.com/pappad-contact" style="text-decoration: none;color: #fff;">Contact Us</a>
+          <a href="https://pappad.com/terms-and-conditions" style="text-decoration: none;color: #fff;">Terms & Conditions</a>
+          <a href="https://pappad.com/partner-terms-and-conditions" style="text-decoration: none;color: #fff;">Restaurant PartnerTerms & Conditions</a>
+          <a href="https://pappad.com/rider-privacy-policy" style="text-decoration: none;color: #fff;">Privacy Policy - Rider</a>
+        </ul>
+        </div>
+        <div class="  col-md-6 mt-5">
+          <ul class="socials" >
+            <a href=""><img src="./facebook.svg" alt="" style=" height: 2em;padding: 1px;"></a>
+            <a href=""><img src="./instagram.svg" alt="" style="height: 2em;"></a>
+        </ul>
+        </div>
+        <div class="col-md-12 text-white text-center">
+          <h6 ><span class="text-muted">Designed by</span> Ilyas</h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

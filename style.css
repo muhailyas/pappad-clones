@@ -1,0 +1,44 @@
+#phone{
+    animation: mover 1s infinite alternate ;
+
+}
+@keyframes mover{
+    0%{
+        transform: translateY(0);
+
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+.error{
+    color: red;
+}
+.error i{
+    color: green;
+}
+#submitvalid{
+    margin-bottom: 5em;
+    display: block;
+}
+
+
+@media (min-width: 200px) and (max-width: 767px){
+.row {
+    text-align: center;
+    align-items: center;
+}
+}
+@media (min-width: 767px) {
+    .socials{
+        display: flex;
+        justify-content: right;
+        margin-right: 150px;
+    }
+    .socials a{
+        margin-right: 10px;
+    }
+}
